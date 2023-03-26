@@ -1,62 +1,41 @@
-<!-- Write a readme to quick review in guide people to use this  -->
-# README.MD
+# CLI ChatGPT Client
 
-## Introduction
+This is a command-line interface (CLI) client for using OpenAI's GPT-3 API to generate responses for a chatbot. It is built with Node.js and requires an OpenAI API key to be set up in a `.env` file.
 
-This is a simple project to connect and chat with open ai completion chatbot.
+## Prerequisites
+
+- Node.js (v14.0.0 or later)
+- npm (v6.14.0 or later)
+- An OpenAI API key
 
 ## Installation
 
-### Install nodejs
+1. Clone the repository: `git clone https://github.com/DilVika/cli-chatgpt-client.git`
+2. Change into the project directory: `cd cli-chatgpt-client`
+3. Install dependencies: `npm install`
 
-#### Linux
+## Usage
 
-```bash 
-sudo apt-get install nodejs
+1. Set up your OpenAI API key by creating a `.env` file in the root directory of the project and adding the following line, replacing `YOUR_API_KEY` with your actual API key:
+
+```
+OPEN_AI_KEY=YOUR_API_KEY
 ```
 
-#### Windows
 
-```bash
-choco install nodejs
-```
-
-### Install npm
-
-#### Linux
-
-```bash
-sudo apt-get install npm
-```
-
-#### Windows
-
-```bash
-choco install npm
-```
-
-<!-- Start the project -->
-
-## Start the project
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Setups the environment
-
-Create .env file in the root directory and add the following variables and add your own key get from openai into the .env file with key "**OPENAI_API_KEY**".
-
-```bash
-cat > .env
-echo OPENAI_API_KEY=<YOURKEY> > .env
-```
-
-### Start the project
+2. Run the CLI client by running the following command in your terminal: 
 
 ```bash
 npm start
 ```
 
+
+3. Follow the prompts to generate responses from the OpenAI GPT-3 API.
+
+## Contributing
+
+If you have suggestions for how to improve this project, please [open an issue](https://github.com/DilVika/cli-chatgpt-client/issues/new) or [submit a pull request](https://github.com/DilVika/cli-chatgpt-client/pulls).
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/DilVika/cli-chatgpt-client/blob/main/LICENSE).
